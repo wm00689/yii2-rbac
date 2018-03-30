@@ -1,0 +1,21 @@
+{
+    "name": "wm00689/yii2admin",
+    "description": "yii2-user-rbac",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wangmin",
+            "email": "17763768@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "wm00689\\assets\\": "assets/",
+            "wm00689\\rbac\\": "rbac/"
+        }
+    }
+}

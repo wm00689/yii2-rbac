@@ -1,1 +1,2 @@
-yii2-rbac
+# template
+yii2-admin-template
