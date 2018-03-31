@@ -62,7 +62,7 @@ $this->beginPage()
 
             </header>
 
-            <form  class="login-form validform" action="<?= \yii\helpers\Url::to('/site/login')?>" method="post">
+            <form  class="login-form validform" action="<?= \yii\helpers\Url::to('/admin/rbac/site/login')?>" method="post">
                 <input type="hidden" name="<?= Yii::$app->request->csrfParam?>" value="<?= Yii::$app->request->csrfToken?>">
 
                 <div class="form-group">
@@ -125,7 +125,7 @@ $this->beginPage()
         callback:function(data){
             if(data.status=="y"){
                 setTimeout(function(){
-                    window.location.href = '<?= \yii\helpers\Url::to('dashboard/index');?>'
+                    window.location.href = '<?= \yii\helpers\Url::to('/admin/rbac/dashboard/index');?>'
                 },500);
             }
         }

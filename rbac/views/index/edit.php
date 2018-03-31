@@ -63,7 +63,7 @@ $this->registerJs($valid, 3);*/
             </div>
             <div class="portlet-body form">
                 <!-- BEGIN FORM-->
-                <form action="<?= \yii\helpers\Url::to(['rbac/index/edit']); ?>" class="form-horizontal validform"
+                <form action="<?= \yii\helpers\Url::to(['/admin/rbac/index/edit']); ?>" class="form-horizontal validform"
                       method="post">
                     <input type="hidden" name="<?= Yii::$app->request->csrfParam ?>"
                            value="<?= Yii::$app->request->csrfToken ?>">

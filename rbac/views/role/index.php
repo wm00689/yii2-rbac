@@ -21,7 +21,7 @@ $this->registerJs($js, 3);
         <div class="actions">
             <a href="javascript:;" class="btn yellow">
                 <i class="fa fa-pencil"></i> Edit </a>
-            <a href="<?= Url::to(['/admin/user/role/add']) ?>" class="btn green" data-toggle="ajaxModal">
+            <a href="<?= Url::to(['add']) ?>" class="btn green" data-toggle="ajaxModal">
                 <i class="fa fa-plus"></i> Add </a>
         </div>
     </div>
@@ -114,7 +114,7 @@ $this->registerJs($js, 3);
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="<?= Url::to(['/admin/user/role/edit', 'id' => $role->name]) ?>"
+                                    <a href="<?= Url::to(['edit', 'id' => $role->name]) ?>"
                                        data-toggle="ajaxModal"><i class="fa fa-pencil"></i>编辑</a>
                                 </li>
                                 <li>

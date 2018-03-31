@@ -6,7 +6,7 @@
  * Time: AM7:15
  */
 
-use wm00689\template\music\AdminAsset;
+use wm00689\yii2admin\music\AdminAsset;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\helpers\VarDumper;

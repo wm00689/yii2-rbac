@@ -1,54 +1,7 @@
-<?php
-/*$this->registerCssFile('plugins/jstree/dist/themes/default/style.min.css', ['depends' => 'backend\themes\music\assets\AdminAsset']);
-$this->registerJsFile('plugins/jstree/dist/jstree.min.js', ['depends' => 'backend\themes\music\assets\AdminAsset']);
-$this->registerJsFile('plugins/bootstrap-toastr/toastr.js', ['depends' => 'backend\themes\music\assets\AdminAsset']);
-$this->registerCssFile('plugins/bootstrap-toastr/toastr.css', ['depends' => 'backend\themes\music\assets\AdminAsset']);
-$this->registerJsFile('js/app.min.js', ['depends' => 'backend\themes\music\assets\AdminAsset']);
-
-$js =
-    <<<EOF
-
-
-EOF;
-
-$valid = <<<EOT
-    function show_msg(msg,type){
-        toastr.options = {
-          "closeButton": true,
-          "debug": false,
-          "positionClass": "toast-top-center",
-          "onclick": null,
-          "showDuration": "1000",
-          "hideDuration": "1000",
-          "timeOut": "5000",
-          "extendedTimeOut": "1000",
-          "showEasing": "swing",
-          "hideEasing": "linear",
-          "showMethod": "fadeIn",
-          "hideMethod": "fadeOut"
-        };
-        if(type=='n'){
-            toastr.warning(msg,'出错了');
-        }else if(type=='y'){
-            toastr.success(msg,' 提交成功');
-        }
-    }
-    $(".validform").Validform({
-        tiptype:function(msg){},
-        ajaxPost:true,
-        callback:function(data){
-        show_msg(data.info,data.status);
-        }
-    });
-EOT;
-
-$this->registerJs($js, 3);
-$this->registerJs($valid, 3);*/
-?>
-<link href="@static/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet">
-<script src="@static/plugins/jstree/dist/jstree.min.js"></script>
-<script src="@static/plugins/bootstrap-toastr/toastr.js"></script>
-<script src="@static/js/app.min.js"></script>
+<link href="/plugins/jstree/dist/themes/default/style.min.css" rel="stylesheet">
+<script src="/plugins/jstree/dist/jstree.min.js"></script>
+<script src="/plugins/bootstrap-toastr/toastr.js"></script>
+<script src="/js/app.min.js"></script>
 <div class="modal-dialog">
     <div class="modal-content">
         <div class="portlet box blue-madison">
@@ -63,7 +16,7 @@ $this->registerJs($valid, 3);*/
             </div>
             <div class="portlet-body form">
                 <!-- BEGIN FORM-->
-                <form action="<?= \yii\helpers\Url::to(['rbac/index/add']); ?>" class="form-horizontal validform"
+                <form action="<?= \yii\helpers\Url::to(['/admin/rbac/index/add']); ?>" class="form-horizontal validform"
                       method="post">
                     <input type="hidden" name="<?= Yii::$app->request->csrfParam ?>"
                            value="<?= Yii::$app->request->csrfToken ?>">

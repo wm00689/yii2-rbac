@@ -12,12 +12,12 @@ $this->registerJs($js, 3);
 <div class="portlet box blue-madison" style="margin-bottom: 0px">
     <div class="portlet-title">
         <div class="caption">
-            <i class="fa fa-gift"></i><?= \backend\classes\common::getActiveItem()?>
+            <i class="fa fa-gift"></i><?= \wm00689\rbac\common::getActiveItem()?>
         </div>
         <div class="actions">
             <a href="javascript:;" class="btn yellow">
                 <i class="fa fa-pencil"></i> Edit </a>
-            <a href="<?= Url::to(['rbac/index/add']) ?>" class="btn green"  data-toggle="ajaxModal">
+            <a href="<?= Url::to(['add']) ?>" class="btn green"  data-toggle="ajaxModal">
                 <i class="fa fa-plus"></i> Add </a>
         </div>
     </div>

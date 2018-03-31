@@ -15,7 +15,7 @@
             </div>
             <div class="portlet-body form">
                 <!-- BEGIN FORM-->
-                <form action="<?= \yii\helpers\Url::to(['/admin/user/role/add']); ?>" class="form-horizontal validform"
+                <form action="<?= \yii\helpers\Url::to(['/admin/rbac/role/add']); ?>" class="form-horizontal validform"
                       method="post">
                     <input type="hidden" name="<?= Yii::$app->request->csrfParam ?>"
                            value="<?= Yii::$app->request->csrfToken ?>">

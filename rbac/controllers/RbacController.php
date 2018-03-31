@@ -15,7 +15,7 @@ class RbacController extends Controller
     public function init()
     {
         parent::init();
-        $this->layout = '@vendor/wm00689/assets/rbac/views/layouts/admin';
-        $this->viewPath = '@vendor/wm00689/assets/rbac/views';
+        $this->layout = '@vendor/wm00689/yii2admin/rbac/views/layouts/admin';
+        $this->viewPath = '@vendor/wm00689/yii2admin/rbac/views';
     }
 }
